@@ -1,11 +1,11 @@
-# Definition for singly-linked list.
+//Definition for singly-linked list.
  struct ListNode
  {
       int val;
       struct ListNode *next;
   };
  
-struct ListNode* reverseList(struct ListNode* head) # reverse a linked list
+struct ListNode* reverseList(struct ListNode* head) //reverse a linked list
  {
     struct ListNode* prevnode=NULL,*currentnode=head,*nextnode=head;
     while(nextnode!=NULL)
@@ -19,7 +19,7 @@ struct ListNode* reverseList(struct ListNode* head) # reverse a linked list
     return head;
  }
 
-bool isPalindrome(struct ListNode* head) # checks if a linked list a palindrome
+bool isPalindrome(struct ListNode* head) // checks if a linked list a palindrome
 {
     if(head==NULL||head->next==NULL)
         return true;
